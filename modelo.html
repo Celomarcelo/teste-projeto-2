@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+<body>
+    <header>
+       <h1>Brain</h1>
+       <h3>Test your knowlegde</h3>
+    </header>
+    <section>
+            <div  id="first-div" class="start">
+                <p>Hello, let's test your kwoledge?</p>
+                <p>But first, enter what you want to be called</p>
+                <input type="text" id="username">
+                <p>When you are ready, press <button id="start" value="submit" onclick="startGame()">Start</button> to begin.</p>
+            </div>
+            <div name="hide1" class="hide">Question:
+                <hr>
+            <span class="question" id="display-question">Question</span>
+            <p> Answer:
+                <input type="radio" name="options" id="true" checked>
+                <label for="true">Correct</label>
+                <input type="radio" name="options" id="false" checked>
+                <label for="false">Incorrect</label>
+            </p>
+                <input type="button" value="submit" onclick="submitQuestions()">
+            </div>
+            <div id="answer-place" class="hide">
+                    Correct Answer
+            </div>
+            <div id="next-question" class="hide">
+                <input type="button" value="next" onclick="nextQuestion()">
+            </div>
+    </section>
+    <footer>
+        <p>Curso em video 2024</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
